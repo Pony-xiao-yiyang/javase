@@ -257,13 +257,67 @@ public class DatetypeDemo02 {
 
 ​				4.转换的时候可能存在内存溢出，或者精度问题
 
-> ```
-> int i = 128;
-> byte b = (byte) i;
-> 
-> System.out.println(i);//128
-> System.out.println(b);//-128    i最大值为127，内存溢出
-> ```
+```java
+/**
+ * @description:类型转换
+ * @author:
+ * @time: 2022/10/26 20:23
+ */
+public class TypeChangeDemo01 {
+    public static void main(String[] args) {
+        int i = 128;
+        byte b = (byte) i;
+        double c = i;
+        /**
+         * 强制转换 (类型)变量名     高--低
+         * 自动转换     低---高
+         */
+        System.out.println(i);//128
+        System.out.println(b);//-128    i最大值为127，内存溢出
+        System.out.println(c);//128.0
+
+        /**
+         * 注意点：
+         *
+         * 			1.不能对Boolean进行转换
+         *
+         * 			2.不能把对象类型转换为不相干的类型
+         *
+         * 			3.在把高容量转换为低容量的时候，强制转换
+         *
+         * 			4.转换的时候可能存在内存溢出，或者精度问题
+         */
+        System.out.println("=======================");
+        System.out.println((int) 23.7);
+        System.out.println((int) -45.89f);
+
+
+        System.out.println("=======================");
+        char d = 'a';
+        int v = d + 1;
+        System.out.println(v);
+        System.out.println((char) v);
+
+    }
+}
+public class TypeChangeDemo02 {
+    public static void main(String[] args) {
+        //操作比较大的数的时候，注意溢出问题
+        //JDK7的新特性，数字之间可以用下划线分割
+        int money = 10_0000_0000;
+        System.out.println(money);
+        int years = 20;
+        int total = money * years;//-1477836480,计算的时候溢出了
+        System.out.println(total);
+        long total2 = money * years;//默认是int类型，转换之前已存在问题
+        System.out.println(total2);
+        long total3 = money * ((long) years);//先把一个数转换为Long
+        System.out.println(total3);
+    }
+}
+```
+
+
 
 **4.变量、常量**
 
