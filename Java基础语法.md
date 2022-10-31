@@ -321,6 +321,105 @@ public class TypeChangeDemo02 {
 
 **4.变量、常量**
 
+​		**变量是什么：**
+
+​				就是可以变化的量！
+
+​				Java是一种强类型语言，每个变量都必须声明其类型
+
+​				Java变量是程序中最基本的存储单元，其要素包括为变量名,变量类型和作用域
+
+> ​								type varName [= value] [{,varName[=value]}];
+>
+> ​							//数据类型	变量名	=	值;	可以使用逗号隔开来声明多个同类型变量
+
+​		**注意事项：**
+
+​						每个变量都有类型，类型可以是基本类型，也可以是引用类型
+
+​						变量名必须是合法的标识符
+
+​						变量声明是一条完整的语句，因此每一个声明都必须以分号结束
+
+​		**变量作用域：**
+
+​				**类变量**
+
+​				**实例变量**
+
+​				**局部变量**
+
+> ​				
+>
+> ```
+> /**
+>  * @description:变量作用域
+>  * @author:
+>  * @time: 2022/10/31 10:20
+>  */
+> public class VariableDemo02Scope {
+>     static  int allClicks   = 0;//类对象
+>     String  str="hello,world";//实例对象
+> 
+>     public static void main(String[] args) {
+>         method();
+>     }
+> 
+>     private static void method() {
+>         int i= 0;//局部变量
+> 
+>     }
+> }
+> /**
+>  * @description:变量作用域
+>  * @author:
+>  * @time: 2022/10/31 10:20
+>  */
+> public class VariableDemo02Scope {
+>     static  int allClicks   = 0;//类对象
+>     String  str="hello,world";//实例对象
+> 
+>     public static void main(String[] args) {
+>         method();
+>     }
+> 
+>     private static void method() {
+>         int i= 0;//局部变量
+> 
+>     }
+> }
+> ```
+
+​					**常量：**
+
+​							常量，初始化后不能再改变值！不会变动的值
+
+​							所谓常量可以理解为一种特殊的变量，它的值被设定后，在程序运行过程中不允许改变
+
+> final 常量名 = 值
+>
+> final double PI = 3.14
+
+​							常量名一般使用大写字符
+
+
+
+​		**变量的命名规范：**
+
+​				所有变量、方法、类名：见名知意
+
+​				类成员变量：首字母小写和驼峰原则：monthSalary	除了第一个单词外，后面的单词首字母大写
+
+​				局部变量：首字母小写和驼峰原则
+
+​				常量：大写字母和下划线：MAX_VALUE
+
+​				类名：首字母大写和驼峰原则： Man,GoodMan
+
+​				方法名：首字母小写和驼峰原则：run(),runRun();
+
+
+
 **5.运算符**
 
 **6.包机制、JavaDoc**
