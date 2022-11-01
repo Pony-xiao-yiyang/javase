@@ -1,3 +1,5 @@
+package datatype;
+
 /**
  * @description:八大数据类型
  * @author:

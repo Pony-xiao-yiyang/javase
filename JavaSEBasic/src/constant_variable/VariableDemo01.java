@@ -1,3 +1,5 @@
+package constant_variable;
+
 /**
  * @description:变量
  * @author:

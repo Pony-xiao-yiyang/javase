@@ -1,3 +1,5 @@
+package constant_variable;
+
 /**
  * @description:
  * @author:
@@ -28,7 +30,7 @@ public class VariableDemo03 {
         int i = 10;
         System.out.println(i);
 
-        //变量类型  变量名字 = new VariableDemo03();
+        //变量类型  变量名字 = new constant_variable.VariableDemo03();
         VariableDemo03 variableDemo03 = new VariableDemo03();
         System.out.println(variableDemo03.age);//0
         System.out.println(variableDemo03.name);//null

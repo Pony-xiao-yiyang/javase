@@ -1,3 +1,5 @@
+package datatype;
+
 /**
  * @description:进制转换  浮点数拓展 字符拓展  转义字符  对象不一致  布尔值拓展
  * @author:

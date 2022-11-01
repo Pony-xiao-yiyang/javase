@@ -1,3 +1,5 @@
+package typechange;
+
 /**
  * @description:类型转换
  * @author:

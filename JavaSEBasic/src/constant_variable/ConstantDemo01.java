@@ -1,3 +1,5 @@
+package constant_variable;
+
 /**
  * @description:
  * @author:
