@@ -438,5 +438,162 @@ public class TypeChangeDemo02 {
 
 ​			7.扩展赋值运算符:+=,-=,*=,/=
 
+```java
+/**
+ * @description:运算符
+ * @author:
+ * @time: 2022/11/1 21:33
+ */
+public class OpratorDemo01 {
+    public static void main(String[] args) {
+            //二元运算符
+        //cltl+d    复制整行
+        int a = 10;
+        int b = 20;
+        int c = 25;
+        int d = 25;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a /(double) b);
+
+
+    }
+}
+
+
+/**
+ * @description:运算符
+ * @author:
+ * @time: 2022/11/1 22:01
+ */
+public class OpratorDemo02 {
+    public static void main(String[] args) {
+        long a = 12312312323L;
+        int b = 123;
+        short c = 10;
+        byte d = 8;
+
+
+        //没有long类型时，所有非int类型的都转为int类型
+        System.out.println(a + b + c + d);//long
+        System.out.println(b + c + d);//Int
+        System.out.println(c + d);//Int
+    }
+}
+
+
+/**
+ * @description:运算符
+ * @author:
+ * @time: 2022/11/1 22:11
+ */
+public class OpratorDemo03 {
+    public static void main(String[] args) {
+        //关系运算符返回的结果：正确，错误      布尔值
+        int a = 10;
+        int b = 20;
+        int c = 21;
+
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a == b);
+        System.out.println(a != b);
+        //取余，模运算
+        System.out.println(c % a); //c / a 21 / 10 = 2...1
+    }
+}
+
+
+/**
+ * @description:运算符——自增自减
+ * @author:
+ * @time: 2022/11/2 20:20
+ */
+public class OpratorDemo04 {
+    public static void main(String[] args) {
+        //++ -- 自增，自减 一元运算符
+        int a = 3;
+
+
+        int b = a++;//执行完这行代码后，先给b赋值，在自增
+        //a=a+1;
+        System.out.println(a);
+
+        //a++   a=a+1;
+        int c = ++a;//执行完这行代码前，先自增，再给b赋值
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+        //幂运算   2^3 2*2*2=8     我们会使用一些工具类来操作
+        double pow = Math.pow(3, 2);
+        System.out.println(pow);
+    }
+}
+
+/**
+ * @description:逻辑运算符
+ * @author:
+ * @time: 2022/11/2 20:33
+ */
+public class OpratorDemo05 {
+    public static void main(String[] args) {
+        //与(and)    或(or)   非(取反)
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println("a  &&  b:"+(a  &&  b));//逻辑与运算：两个变量都为真，结果才为true
+        System.out.println("a  ||  b:" + (a || b));//逻辑或运算：两个变量有一为真，结果才为true
+        System.out.println("!(a &&  b):" + !(a && b));//逻辑非运算：如果为真，则为假，如果是假则结果为真
+
+
+        //短路运算
+        int c = 5;
+        boolean d = (c < 4) && (c++ < 4);
+        System.out.println(d);
+        System.out.println(c);
+
+
+    }
+}
+
+/**
+ * @description:位运算
+ * @author:
+ * @time: 2022/11/2 20:52
+ */
+public class OpratorDemo06 {
+    public static void main(String[] args) {
+        /**
+         * A = 0011 1100
+         * B = 0000 1101
+         *
+         * A&B  0000 1100   0假1真 11为真 其余都为假
+         * A|B  0011 1101   0假1真 00为假，其余为真
+         * A^B  0011 0001   相同为0 不同为1
+         * ~B   1111 0010   取反
+         *
+         * 2*8 = 16 2*2*2*2
+         *
+         * <<   *2          左移几位    2<<3    就是0000 0010 变成  0001 0000 左移3位
+         * >>   /2          右移几位    16>>3    就是0001 0000 变成  0000 0010 左移3位
+         * 0000 0000 0
+         * 0000 0001 1
+         * 0000 0010 2
+         * 0000 0011 3      2*2^1+1
+         * 0000 0100 4      2*2^1
+         *
+         * 0000 1000 8      2*2^2
+         * 0001 0000 16     2*2^3
+         */
+        System.out.println(2<<3);
+    }
+}
+```
+
+
+
 **6.包机制、JavaDoc**
 
