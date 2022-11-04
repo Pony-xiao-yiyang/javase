@@ -597,3 +597,15 @@ public class OpratorDemo06 {
 
 **6.包机制、JavaDoc**
 
+​		**为了更好地组织类，Java提供了包机制，用于区别类名的命名空间**
+
+​		**包语句的语法格式为：**
+
+​			package pkg1[.	pkg2[.	pkg3]];
+
+​		**一般利用公司域名倒置作为包名;**		eg：www.google.com	com.google.www
+
+​		**为了能够使用某一个包的成员，我们需要在Java程序中明确导入该包。使用"import"语句可完成此功能**
+
+> ​	import package1[.package2...].(classname|*);
+
