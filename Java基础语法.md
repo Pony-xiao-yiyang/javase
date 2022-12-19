@@ -597,6 +597,8 @@ public class OpratorDemo06 {
 
 **6.包机制、JavaDoc**
 
+​	**包机制**
+
 ​		**为了更好地组织类，Java提供了包机制，用于区别类名的命名空间**
 
 ​		**包语句的语法格式为：**
@@ -608,4 +610,24 @@ public class OpratorDemo06 {
 ​		**为了能够使用某一个包的成员，我们需要在Java程序中明确导入该包。使用"import"语句可完成此功能**
 
 > ​	import package1[.package2...].(classname|*);
+
+​	**JavaDoc**
+
+​		**javadoc命令是用来生成自己的API文档的**
+
+​		**参数信息：**
+
+​			***@author 作者名***
+
+​			***@version    版本号***
+
+​			***@since      指明需要最早使用的jdk版本***
+
+​			***@return     返回值情况***
+
+​			***@param   name	参数值***
+
+​			***@throws Exception    抛出异常情况***
+
+
 
