@@ -25,4 +25,15 @@ public class Demo01 {
         return name;
 
     }
+
+    /**
+     *
+     * @param name
+     * @return
+     * @throws Exception
+     */
+    public String test1(String name) throws Exception{
+        return name;
+
+    }
 }
