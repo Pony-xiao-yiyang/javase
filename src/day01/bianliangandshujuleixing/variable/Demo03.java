@@ -36,7 +36,7 @@ public class Demo03 {
         //八大数据类型
 
         //整数
-        Integer integer =   1;//包装类
+        Integer  integer =   1;//包装类
         Byte byte1 =  1;
         int     num1    =   10;//最常用
         byte    num2   =   20;
